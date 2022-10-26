@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    let body = document.getElementsByTagName("body")[0];
+    let title = document.createElement("H2");
+    body.appendChild(title);
+    title.innerText = "This is Title";
+
+    let body1 = document.getElementsByTagName("body")[0];
+    let inp = document.createElement("input");
+    inp.setAttribute("type", "text");
+    inp.setAttribute("placeholder", "Username");
+    body1.appendChild(inp);
+    inp.innerText = "Username";
+
+    let body2 = document.getElementsByTagName("body")[0];
+    let inp2 = document.createElement("input");
+    inp2.setAttribute("type", "password");
+    inp2.setAttribute("placeholder", "Password");
+    body2.appendChild(inp2);
+    inp2.innerText = "Password";
+
+    let body3 = document.getElementsByTagName("body")[0];
+    let btn = document.createElement("button");
+    body.appendChild(btn);
+    btn.innerText = "Login";
+</script>
+</html>
