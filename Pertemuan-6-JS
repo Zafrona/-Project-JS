@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+
+<body>
+    <div>
+        <h1>Kalkulator</h1>
+        <h4>Hasil : <span id="hasil"></span></h4>
+        <input type="number" placeholder="Masukkan Angka Pertama" id="angka1">
+        <input type="number" placeholder="Masukkan Angka Kedua" id="angka2">
+        <select id="operasi">
+            <option value="penjumlahan">Penjumlahan</option>
+            <option value="pengurangan">Pengurangan</option>
+            <option value="perkalian">Perkalian</option>
+            <option value="pembagian">Pembagian</option>
+        </select>
+        <button id="button" onclick="operation()">Hasil</button>
+    </div>
+</body>
+<script>
+    const operation = () => {
+        let operator = document.getElementById("operasi").value
+        let a1 = parseInt(document.getElementById("angka1").value)
+        let a2 = parseInt(document.getElementById("angka2").value)
+        let hasil = document.getElementById("hasil")
+
+        if(operator == "penjumlahan") {
+            hasil.innerText = a1 + a2
+            return hasil
+        }
+
+        else if(operator == "pengurangan") {
+            hasil.innerText = a1 - a2
+            return hasil
+        }
+
+        else if(operator == "perkalian") {
+            hasil.innerText = a1 * a2
+            return hasil
+        }
+
+        else {
+            hasil.innerText = a1 / a2
+            return hasil
+        }
+    }
+</script>
+
+</html>
