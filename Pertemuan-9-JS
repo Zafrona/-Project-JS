@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+
+<body>
+    
+</body>
+<script>
+    class tumbuhan1 {
+        // atribut = kata sifat
+        constructor() {
+            this.nama = 'Mangga'
+            this.jenis = 'Buah'
+            this.warna = 'Kuning'
+        }
+
+        // fungsi = kata kerja
+        tumbuh(tumbuh) {
+            console.log("Tumbuhan ini dapat tumbuh")
+        }
+        
+        berbuah(buah) {
+            console.log("Tumbuhan ini menghasilkan buah " + buah)
+        }
+
+    }
+    buahbuah = new tumbuhan1()
+    console.log(tumbuhan1)
+
+
+    class tumbuhan2 {
+        // atribut = kata sifat
+        constructor() {
+            this.nama = 'Wortel'
+            this.jenis = 'Sayur'
+            this.warna = 'Orange'
+        }
+
+        // fungsi = kata kerja
+        tumbuh(tumbuh) {
+            console.log("Tumbuhan ini dapat tumbuh")
+        }
+        
+        sayuran(sayur) {
+            console.log("Tumbuhan ini menghasilkan sayur " + sayur)
+        }
+
+    }
+    sayuran = new tumbuhan2()
+    console.log(tumbuhan2)
+
+
+    class tumbuhan3 {
+        // atribut = kata sifat
+        constructor() {
+            this.nama = 'Mawar'
+            this.jenis = 'Bunga'
+            this.warna = 'Merah'
+        }
+
+        // fungsi = kata kerja
+        tumbuh(tumbuh) {
+            console.log("Tumbuhan ini dapat tumbuh")
+        }
+        
+        berbunga(bunga) {
+            console.log("Tumbuhan ini menghasilkan bunga " + bunga)
+        }
+
+    }
+    bunga = new tumbuhan3()
+    console.log(tumbuhan3)
+</script>
+
+</html>
